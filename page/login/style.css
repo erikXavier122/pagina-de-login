@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #7abff7, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color: #f3f3f3;
+}
+
+.left-login > img {
+    max-width:600px;
+    max-height:600px;
+    width: auto;
+    height: auto;
+
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 5px;
+    background: #569aff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #000000;
+    font-weight: 900;
+    margin: -45px 0px 40px 0px;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield > input {
+    width: 65%;
+    border: none;
+    border-radius: 0px;
+    padding: 15px;
+    margin: 0px 0px -5px 70px;
+    background: none;
+    color: #000000;
+    font-size: 12pt;
+    box-shadow: 0px 1px 0px #ffffff;
+    outline: none;
+}
+
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 0px;
+    margin-left: 70px;
+}
+
+.textfield > input::placeholder {
+    color: #4d4d4d94;
+}
+
+.btn-login {
+    width: 15vw;
+    height: 5vh;
+    padding: 16px 0px;
+    margin: 60px 23px 3px 30px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #000000;
+    background-image: linear-gradient(to right , #0286f3, #aed7f8);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #000000;
+    transition: all 0.50s ease-in-out;
+}
+
+.btn-login:hover{
+    width: 16vw;
+    height: 6vh;
+}
+
+.cadastar{
+    margin: 0px 0px 0px 0px;
+}
+
+#dialog_not_found{
+    display: none;
+    border: none;
+    height: 25vh;
+    width: 20vw;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.842);
+    box-shadow: 0px 0px 10px 5px rgba(241, 57, 57, 0.795);
+}
+
+#dialog_value_empty{
+    display: none;
+    border: none;
+    height: 15vh;
+    width: 18vw;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.842);
+    box-shadow: 0px 0px 10px 5px rgba(241, 57, 57, 0.795);
+}
+
+
+#dialog_value_empty > h2{
+    font-size: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#dialog_not_found > h2{
+    font-size: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#btn_not_found{
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 35%;
+    transition: all 0.25s ease-in-out;
+}
+
+#btn_empty{
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: large;
+    background-color: transparent;
+    margin-left: 35%;
+    transition: all 0.25s ease-in-out;
+}
+
+#btn_not_found:hover{
+    padding: 20px 35px;
+    box-shadow: 0px 0px 10px 5px rgba(241, 57, 57, 0.795);
+    border: none;
+}
+
+#btn_empty:hover{
+    padding: 15px 25px;
+    box-shadow: 0px 0px 10px 5px rgba(241, 57, 57, 0.795);
+    border: none;
+}

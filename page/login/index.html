@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça seu login,<br> faça parte da equipe.</h1>
+            <img src="server-animate.svg" alt="server-animate">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>ENTRAR</h1>
+                <div class="textfield">
+                    <label id="labelEmail" for="email">Email</label>
+                    <input id="email" type="text" name="email" placeholder="Email">
+                </div>
+                <div class="textfield">
+                    <label id="labelSenha" for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                </div>
+                <button id="btn-login" class="btn-login">login</button>
+                <div class="cadastar">
+                    <p>Não tem conta? 
+                        <a href="http://127.0.0.1:5500/page/cadastro/index.html"> Cadastre-se.</a>
+                    </p>
+                </div>
+                
+                <!-- The Modal -->
+                <dialog class="not_found" id="dialog_not_found">
+                    <h2 class="h2_not_found">Este usuario<br>não existe.</h2>
+                    <button id="btn_not_found">fechar</button>        
+                </dialog>
+
+                <!-- The Modal -->
+                <dialog class="empty_value" id="dialog_value_empty">
+                    <h2 class="h2_not_found">Email ou Senha vazios.</h2>
+                    <button id="btn_empty">fechar</button>
+                </dialog>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

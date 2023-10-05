@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Oswald:wght@300;600&display=swap');
+*{
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+
+/* Desabilitar sublinhado vermelho de erro de escrita */
+
+
+.main-cadastro{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: linear-gradient(to right bottom, #4c39f7, #cc45f5b2);
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cadastro{
+    width: 27vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 100px 15px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #6fcaee56;
+}
+
+.card-cadastro > h1{
+    cursor: default;
+    align-items: center ;
+    width: 11vw, auto;
+    height: 35vh, auto;
+    font-family: 'lora';
+    font-size: 45px;
+    margin: 0%;
+    margin-bottom: 5px;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 4px 0px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield > input{
+    width: 96%;
+    border: none;
+    padding: 5px 5px;
+    background: none;
+    color: #717777;
+    font-size: 13pt;
+    box-shadow: 0px 1px 0px #002efc;
+    outline: none;
+    background-color: transparent;
+}
+
+#button-click-cadastro{
+    margin-top: 15px;
+    padding: 5px;
+    width: 120px;
+    font-size: larger;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #8579f7, #cc45f5b2);
+    cursor: pointer;
+    transition: all 0.30s ease-in-out;
+}
+
+#button-click-cadastro:hover{
+    padding: 9px;
+    width: 130px;
+}
+
+.cadastrado > img{
+    height: 3vw;
+    width: 3vh;
+}
+.cadastrado {
+    margin-right: 10px;
+    margin-left: 10% ;
+    display: none;
+    width: 25%;
+    height: 7%;
+    font-size: 30;
+    border: none;
+    padding: 8px 2px;
+    background: none;
+    color: #000000;
+    font-size: 13pt;
+    box-shadow: -10px 10px 13px 1px #50db73;
+    outline: none;
+    background-color: transparent;
+}
+
+.login{
+    margin: -1px -172px -13px 153px;
+}
+
+.ok{
+    width: 100vw; /* Full width */
+    height: 14vh; /* Full height */
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-top: #5bec86 solid 7px;
+    border-radius: 20px;
+    box-shadow: 0 0 #001aff, 0 0 #02ffdde1, 0 25px 50px -12px rgba(0, 0, 0, 0.37);
+    padding: 2rem;
+    max-width: 400px;
+    margin-top: 21vw;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0;
+    overflow: auto; /* Enable scroll if needed */
+}
+
+.not_found{
+    display: none;
+    width: 100vw; /* Full width */
+    height: 14vh; /* Full height */
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-top: #e04242 solid 7px;    border-radius: 20px;
+    box-shadow: 0 0 #001aff, 0 0 #000000e1, 0 25px 50px -12px rgba(0, 0, 0, 0.37);
+    padding: 2rem;
+    max-width: 400px;
+    margin-top: 21vw;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0;
+    overflow: auto; /* Enable scroll if needed */
+}
+
+.empty_value{
+    display: none;
+    width: 100vw; /* Full width */
+    height: 14vh; /* Full height */
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-top: #e04242 solid 7px;    border-radius: 20px;
+    box-shadow: 0 0 #001aff, 0 0 #000000e1, 0 25px 50px -12px rgba(0, 0, 0, 0.37);
+    padding: 2rem;
+    max-width: 400px;
+    margin-top: 21vw;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0;
+    overflow: auto; /* Enable scroll if needed */
+}
+
+#btn_not_found{
+    margin-top: -44px;
+    padding: 0px;
+    width: 4vw;
+    height: 3vh;
+    font-size: medium;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    background-color: #d1d6d5;
+    color: #000000;
+    cursor: pointer;
+}
+
+#btn_empty{
+    margin-top: -44px;
+    padding: 0px;
+    width: 4vw;
+    height: 3vh;
+    font-size: medium;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    background-color: #d1d6d5;
+    color: #000000;
+    cursor: pointer;
+}
+
+.h2_ok{
+    margin: -10px -16px 69px;
+    height: 6vh;
+    width: 23vw;
+}
+
+.h2_not_found{
+    margin: -10px -16px 64px;
+    height: 6vh;
+    width: 23vw;
+}
+
+dialog > p{
+    margin: 0px;
+    height: 2vh;
+    width: 13vw;
+}
+

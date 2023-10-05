@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+
+}
+
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-page{
+    display: flex;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    transform: translate(-1% 0%);
+    background-color: #008cff91;
+
+}
+.top-page > h1 {
+    margin-left: 10px;
+}
+
+
+.btn-cadastrar{
+    margin-top: 1.5%;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    background-color:transparent;
+    color: currentColor;
+    height: 3vh;
+    width: 6vw;
+    font-size: large;
+    cursor: pointer;
+    margin-left: 155vh;
+}
+
+.btn-entrar{
+    margin-top: 1.5%;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    background-color:transparent;
+    color: currentColor;
+    height: 3vh;
+    width: 3vw;
+    font-size: large;
+    cursor: pointer;
+}
+
+.btn-cadastrar:hover{
+    text-decoration: underline;
+}
+.btn-entrar:hover{
+    text-decoration: underline;
+}
+
+.left{
+    margin: -15% 0% -30% -16%;
+    left: 1px;
+    float: left;
+    height: 80vh;
+    width: 30vw;
+}
+.left > img{
+    margin-left: 20%;
+    border-radius: 100%;
+    height: 20vh;
+    width: 15vw;
+}
+
+.right{
+    margin: -15% -25% -30% -16%;
+    float: right;
+    height: 80vh;
+    width: 30vw;
+}
+.right > img{
+    margin-left: -2%;
+    height: 35vh;
+    width: 30vw;
+}
+
+.left > h1{
+    font-size: 50px;
+}
+.right > h1{
+    font-size: 50px;
+}
+
+.left > p{
+    font-size: 20px;
+}
+.right > p{
+    font-size: 20px;
+}

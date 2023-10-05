@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="main-cadastro">
+        <div class="card-cadastro">
+            <!-- name, email, telephone, address, nascimento, sex, cpf. -->
+            <h1>Cadastrar</h1>
+            <div class="textfield">
+                <label id="labelNome" for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+            </div>
+
+            <div class="textfield">
+                <label id="labelEmail" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" autocomplete="email" required>
+            </div>
+
+            <div class="textfield">
+                <label id="labelTelephone" for="telephone">Telephone</label>
+                <input type="text" id="telephone" name="telephone" placeholder="(19)12345-6789" required>
+            </div>
+
+            <div class="textfield">
+                <label id="labelEndereço" for="endereço">Endereço</label>
+                <input type="text" id="endereço" name="endereço" placeholder="Endereço" required>
+            </div>
+
+            <div class="textfield">
+                <label id="labelNascimento" for="nascimento">Data de nascimento</label>
+                <input type="date" id="nascimento" name="nascimento" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" required >
+            </div>
+
+            <div class="textfield">
+                <label id="labelSex" for="sex">Sexualidade</label>
+                <input type="text" id="sex" name="sex" placeholder="M ou F" required>
+            </div>
+
+            <div class="textfield">
+                <label id="labelCpf" for="cpf">Cpf</label>
+                <input type="text" id="cpf" name="cpf" placeholder="123.123.123-12" required>
+            </div>
+
+            <div class="textfield">
+                <label id="labelSenha" for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+            </div>
+
+            <div class="textfield">
+                <label id="labelConfirmSenha" for="confirmSenha">Confirm senha</label>
+                <input type="password" id="confirmSenha" name="confirmSenha" placeholder="Confirm senha" required>
+            </div>
+            
+            <div class="btn-cadastro">
+                <button id="button-click-cadastro" >Cadastrar</button>
+            </div>
+
+            <!-- The Modal -->
+            <dialog class="ok" id="dialog_ok" >
+                <h2 class="h2_ok"><img id="imageee" src="./all-image/ok.png" alt="ok">Cadastro criado com sucesso!</h2>
+                <p>faça o login clicando <a href="http://127.0.0.1:5500/page/login/index.html">aqui</a>.</p>        
+            </dialog>
+
+            <!-- The Modal -->
+            <dialog class="not_found" id="dialog_not_found">
+                <h2 class="h2_not_found"><img id="imageee" src="./all-image/cancelar.png" alt="error">Erro ao cadastrar usuario.</h2>
+                <button id="btn_not_found">fechar</button>        
+            </dialog>
+
+            <!-- The Modal -->
+            <dialog class="empty_value" id="dialog_value_empty">
+                <h2 class="h2_not_found"><img id="imageee" src="./all-image/cancelar.png" alt="error">Algun valor vazio.</h2>
+                <button id="btn_empty">fechar</button>
+            </dialog>
+
+            <div class="login">
+                <p>Ja tem conta? 
+                    <a href="http://127.0.0.1:5500/page/login/index.html"> login</a>.
+                </p>
+                </div>
+
+        </div>
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>
